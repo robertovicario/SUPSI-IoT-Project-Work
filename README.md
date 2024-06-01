@@ -1,4 +1,4 @@
-# TSM_IoT_Project_Work
+# TSM-IoT-Project-Work
 
 ## Overview
 
@@ -8,7 +8,7 @@
 
 > [!NOTE]
 > 
-> Try the TSM_IoT_Project_Work here: [robertovicario.github.io/TSM_IoT_Project_Work](https://robertovicario.github.io/TSM_IoT_Project_Work)
+> Try the TSM-IoT-Project-Work here: [robertovicario.github.io/TSM-IoT-Project-Work](https://robertovicario.github.io/TSM-IoT-Project-Work)
 
 ## Preview
 
