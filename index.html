@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>TSM_IoT_Project_Work</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+</head>
+
+<body class="d-flex justify-content-center align-items-start">
+    <section style="width: 100%;padding: 20px;margin-top: 32px;">
+        <div class="container">
+            <form style="margin-bottom: 24px;">
+                <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="formCheck-1" style="border-width: 1px;" onclick="this.form.submit()"><label class="form-check-label" for="formCheck-1">Master Mode</label></div>
+            </form>
+            <div class="table-responsive" style="margin-bottom: 24px;">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="font-style: italic;text-align: center;text-decoration: underline;">ID</th>
+                            <th style="font-style: italic;text-align: center;">Register</th>
+                            <th style="font-style: italic;text-align: center;">Length</th>
+                            <th style="font-style: italic;text-align: center;">Type</th>
+                            <th style="font-style: italic;text-align: center;">R / W</th>
+                            <th style="font-style: italic;text-align: center;">Label</th>
+                            <th style="font-style: italic;text-align: center;">Description</th>
+                            <th style="font-style: italic;text-align: center;">Unit</th>
+                            <th style="font-style: italic;text-align: center;">Commands</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td style="text-align: center;">100</td>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">Float</td>
+                            <td style="text-align: center;">Read only</td>
+                            <td style="text-align: center;">V12</td>
+                            <td>Tensione concatenata fase 1-2 /&nbsp;Linked Voltage Phase 1-2</td>
+                            <td style="text-align: center;">V</td>
+                            <td>
+                                <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+                                    <div class="btn-group" role="group"><button class="btn btn-primary analytics" type="button" style="background: green;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" data-bs-target="#modal-2" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line-fill" style="font-size: 20px;padding: 0px;">
+                                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: orange;border-width: 0px;font-weight: bold;margin: 0 6px;border-radius: 12px;" data-bs-target="#modal-1" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil-fill" style="font-size: 20px;padding: 0px;">
+                                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: red;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" onclick="confirm(&quot;Do you really want to delete this row?&quot;)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-eraser-fill" style="font-size: 20px;padding: 0px;">
+                                                <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"></path>
+                                            </svg></button></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">102</td>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">Float</td>
+                            <td style="text-align: center;">Read only</td>
+                            <td style="text-align: center;">V23</td>
+                            <td>Tensione concatenata fase 2-3 /&nbsp;Linked Voltage Phase 2-3</td>
+                            <td style="text-align: center;">V</td>
+                            <td>
+                                <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+                                    <div class="btn-group" role="group"><button class="btn btn-primary analytics" type="button" style="background: green;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" data-bs-target="#modal-2" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line-fill" style="font-size: 20px;">
+                                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: orange;border-width: 0px;font-weight: bold;margin: 0 6px;border-radius: 12px;" data-bs-target="#modal-1" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil-fill" style="font-size: 20px;">
+                                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: red;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" onclick="confirm(&quot;Do you really want to delete this row?&quot;)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-eraser-fill" style="font-size: 20px;">
+                                                <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"></path>
+                                            </svg></button></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">3</td>
+                            <td style="text-align: center;">104</td>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">Float</td>
+                            <td style="text-align: center;">Read only</td>
+                            <td style="text-align: center;">V31</td>
+                            <td>Tensione concatenata fase 3-1 /&nbsp;Linked Voltage Phase 3-1</td>
+                            <td style="text-align: center;">V</td>
+                            <td>
+                                <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+                                    <div class="btn-group" role="group"><button class="btn btn-primary analytics" type="button" style="background: green;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" data-bs-target="#modal-2" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line-fill" style="font-size: 20px;">
+                                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: orange;border-width: 0px;font-weight: bold;margin: 0 6px;border-radius: 12px;" data-bs-target="#modal-1" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil-fill" style="font-size: 20px;">
+                                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: red;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" onclick="confirm(&quot;Do you really want to delete this row?&quot;)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-eraser-fill" style="font-size: 20px;">
+                                                <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"></path>
+                                            </svg></button></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">4</td>
+                            <td style="text-align: center;">106</td>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">Float</td>
+                            <td style="text-align: center;">Read only</td>
+                            <td style="text-align: center;">Vtm</td>
+                            <td>Tensione concatenata media / Average Voltage</td>
+                            <td style="text-align: center;">V</td>
+                            <td>
+                                <div class="d-flex justify-content-center align-items-center" style="width: 100%;">
+                                    <div class="btn-group" role="group"><button class="btn btn-primary analytics" type="button" style="background: green;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" data-bs-target="#modal-2" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line-fill" style="font-size: 20px;">
+                                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: orange;border-width: 0px;font-weight: bold;margin: 0 6px;border-radius: 12px;" data-bs-target="#modal-1" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pencil-fill" style="font-size: 20px;">
+                                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                                            </svg></button><button class="btn btn-primary" type="button" style="background: red;border-width: 0px;font-weight: bold;border-radius: 12px;margin: 0 6px;" onclick="confirm(&quot;Do you really want to delete this row?&quot;)"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-eraser-fill" style="font-size: 20px;">
+                                                <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"></path>
+                                            </svg></button></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex d-md-flex justify-content-end align-items-start justify-content-md-end align-items-md-end" style="margin-bottom: 24px;"><a class="btn btn-primary" role="button" style="padding: 8px;border-radius: 12px;border-width: 0px;width: 48px;height: 48px;" data-bs-target="#modal-1" data-bs-toggle="modal" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg" style="font-size: 32px;">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"></path>
+                            </svg></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form id="form-add">
+                    <div class="modal-header"><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6"><input class="form-control" type="number" id="modal-register" placeholder="Register" style="width: 100%;padding: 6px 12px;margin: 8px 0;" required=""></div>
+                                <div class="col-md-6"><input class="form-control" type="number" id="modal-length" placeholder="Length" style="width: 100%;padding: 6px 12px;margin: 8px 0;" required=""></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4"><select class="form-select" id="modal-type" style="width: 100%;padding: 6px 12px;margin: 8px 0;">
+                                        <option value="0" selected="">Float</option>
+                                        <option value="1">Int</option>
+                                        <option value="2">Long</option>
+                                    </select></div>
+                                <div class="col-md-4"><input class="form-control" type="text" id="modal-rw" placeholder="R / W" style="width: 100%;padding: 6px 12px;margin: 8px 0;" required=""></div>
+                                <div class="col-md-4"><input class="form-control" type="text" id="modal-label" placeholder="Label" style="width: 100%;padding: 6px 12px;margin: 8px 0;" required=""></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6"><input class="form-control" type="text" id="modal-description" placeholder="Description" required="" style="width: 100%;padding: 6px 12px;margin: 8px 0;"></div>
+                                <div class="col-md-6"><input class="form-control" type="text" id="modal-unit" placeholder="Unit" required="" style="width: 100%;padding: 6px 12px;margin: 8px 0;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-primary" id="modal-btn-save" type="submit" style="border-radius: 0;border-width: 0px;">Save</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-2">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button class="btn-close" aria-label="Close" data-bs-dismiss="modal" type="button"></button></div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12"><canvas id="analytics"></canvas></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" id="modal-btn-download-data" type="submit" style="border-radius: 0;border-width: 0px;" onclick="downloadCSV()">Download Data</button></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function addData(chart, label, data) {
+            chart.data.labels.push(label);
+            chart.data.datasets.forEach((dataset) => {
+                dataset.data.push(data);
+            });
+            chart.update();
+        }
+
+        const canvas = document.getElementById('analytics');
+        const labels = [];
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Measuring',
+                backgroundColor: 'transparent',
+                borderColor: 'rgb(0, 0, 255)',
+                data: [],
+                pointStyle: 'circle',
+                pointBackgroundColor: 'rgba(0, 0, 255, 0.2)',
+                pointRadius: 10,
+                pointHoverRadius: 15
+            }]
+        };
+        const config = {
+            type: 'line',
+            data: data,
+            options: {}
+
+        };
+
+        const myChart = new Chart(canvas, config);
+        setInterval(function() {
+            var currentTime = new Date();
+            const newData = Math.floor(Math.random() * 5001) + 2500;
+
+            addData(myChart, currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + currentTime.getSeconds(), newData);
+        }, 1000);
+        
+        function convertToCSV(chart) {
+            let csv = 'Time,Value\n';
+            chart.data.labels.forEach((label, index) => {
+                const value = chart.data.datasets[0].data[index];
+                csv += `${label},${value}\n`;
+            });
+            return csv;
+        }
+
+        function downloadCSV() {
+            const csv = convertToCSV(myChart);
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.setAttribute('href', url);
+            a.setAttribute('download', 'TSM_IoT_Project_Work_data.csv');
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
