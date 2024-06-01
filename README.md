@@ -8,8 +8,6 @@
 
 > [!NOTE]
 > 
-> ### Try this Project
-> 
 > Try the TSM_IoT_Project_Work here: [robertovicario.github.io/TSM_IoT_Project_Work](https://robertovicario.github.io/TSM_IoT_Project_Work)
 
 ## Preview
