@@ -12,7 +12,18 @@
 
 ## Preview
 
-<img src="https://github.com/robertovicario/2UML/assets/119845903/dac148e4-8e1a-4bd5-ac49-cf31427af7ac" width=512>
+<table>
+    <tr>
+        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/ff725fd4-970d-4437-9f8e-be9f7c9f1b0a" width="512"></td>
+        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/f1126c2a-08cd-4857-a47c-e57556f73bdb" width="512"></td>
+        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/0bd17545-d534-442d-bb31-92d5f27a63d1" width="512"></td>
+    </tr>
+    <tr>
+        <td align="center">Dashboard</td>
+        <td align="center">Configuration</td>
+        <td align="center">Analytics</td>
+    </tr>
+</table>
 
 ## License
 
