@@ -14,8 +14,8 @@
 
 <table>
     <tr>
-        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/ff725fd4-970d-4437-9f8e-be9f7c9f1b0a" width="512"></td>
-        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/f1126c2a-08cd-4857-a47c-e57556f73bdb" width="512"></td>
+        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/2ce85279-3d1c-46e1-b9f5-809797ed518a" width="512"></td>
+        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/40103dd4-5a0d-4bb3-b3a2-0feefecb1bae" width="512"></td>
         <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/0bd17545-d534-442d-bb31-92d5f27a63d1" width="512"></td>
     </tr>
     <tr>
