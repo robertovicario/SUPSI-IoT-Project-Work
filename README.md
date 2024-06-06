@@ -2,9 +2,7 @@
 
 ## Overview
 
-...
-
-- [TSM_IoT_2023](https://moodle.msengineering.ch/report/dbextend/?key=TSM_IoT&edition=2023)
+- **Internet of Things:** [TSM_IoT_2023](https://moodle.msengineering.ch/report/dbextend/?key=TSM_IoT&edition=2023)
 
 > [!NOTE]
 > 
