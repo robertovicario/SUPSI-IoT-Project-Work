@@ -1,4 +1,4 @@
-# TSM-IoT-Project-Work
+# SUPSI-IoT-Project-Work
 
 ## Overview
 
@@ -6,15 +6,15 @@
 
 > [!NOTE]
 > 
-> Try the TSM-IoT-Project-Work here: [robertovicario.github.io/TSM-IoT-Project-Work](https://robertovicario.github.io/TSM-IoT-Project-Work)
+> Try the SUPSI-IoT-Project-Work here: [robertovicario.github.io/SUPSI-IoT-Project-Work](https://robertovicario.github.io/SUPSI-IoT-Project-Work)
 
 ## Preview
 
 <table>
     <tr>
-        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/2ce85279-3d1c-46e1-b9f5-809797ed518a" width="512"></td>
-        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/40103dd4-5a0d-4bb3-b3a2-0feefecb1bae" width="512"></td>
-        <td><img src="https://github.com/robertovicario/TSM-IoT-Project-Work/assets/119845903/0bd17545-d534-442d-bb31-92d5f27a63d1" width="512"></td>
+        <td><img src="https://github.com/robertovicario/SUPSI-IoT-Project-Work/assets/119845903/2ce85279-3d1c-46e1-b9f5-809797ed518a" width="512"></td>
+        <td><img src="https://github.com/robertovicario/SUPSI-IoT-Project-Work/assets/119845903/40103dd4-5a0d-4bb3-b3a2-0feefecb1bae" width="512"></td>
+        <td><img src="https://github.com/robertovicario/SUPSI-IoT-Project-Work/assets/119845903/0bd17545-d534-442d-bb31-92d5f27a63d1" width="512"></td>
     </tr>
     <tr>
         <td align="center">Dashboard</td>
