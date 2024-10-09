@@ -6,7 +6,7 @@
 
 > [!NOTE]
 > 
-> Try the SUPSI IoT Project Work here: [robertovicario.github.io/SUPSI-IoT-Project-Work](https://robertovicario.github.io/SUPSI-IoT-Project-Work)
+> Try the SUPSI IoT Project Work here: [robertovicario.com/SUPSI-IoT-Project-Work](https://www.robertovicario.com/SUPSI-IoT-Project-Work)
 
 ## Preview
 
